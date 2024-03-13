@@ -22,3 +22,13 @@ jobs:
     - name: Run Robot Framework tests
       run: |
         robot --variable BROWSER:headlesschrome lesson_2
+
+    - name: Upload Test Reports as Artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: robot-framework-reports
+        path: |
+          log.html
+          report.html
+          output.xml
+
