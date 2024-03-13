@@ -20,5 +20,7 @@ jobs:
         pip install robotframework robotframework-seleniumlibrary
 
     - name: Run Robot Framework tests
+      env:
+        HEADLESS: True
       run: |
-        robot --variable BROWSER:headlesschrome lesson_2
+        robot --variable HEADLESS:True lesson_2/
