@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.1 on darwin)" generated="2024-03-13T02:04:37.243744" rpa="false" schemaversion="5">
+<suite id="s1" name="Datadriven" source="/Users/r.vanderhorst/Documents/GitHub/robotframework_course/lesson_4_datadriven/websitelearnautomatedtesting/datadriven.robot">
+<test id="s1-t1" name="Open And Log First Page" line="9">
+<kw name="Click On URL And Log">
+<kw name="Open Browser To URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-13T02:04:37.508763" level="INFO">Opening browser 'Chrome' to base url 'https://learnautomatedtesting.com/blog/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-13T02:04:37.508643" elapsed="7.157002"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-13T02:04:44.946075" elapsed="0.633845"/>
+</kw>
+<arg>${URL}</arg>
+<status status="PASS" start="2024-03-13T02:04:37.508321" elapsed="8.071742"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-13T02:04:45.580820" level="INFO">Clicked on https://learnautomatedtesting.com/blog/</msg>
+<arg>Clicked on ${URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-13T02:04:45.580201" elapsed="0.000725"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-13T02:04:45.581292" elapsed="0.160783"/>
+</kw>
+<arg>https://learnautomatedtesting.com/blog/</arg>
+<status status="PASS" start="2024-03-13T02:04:37.508155" elapsed="8.234021"/>
+</kw>
+<status status="PASS" start="2024-03-13T02:04:37.507891" elapsed="8.234525"/>
+</test>
+<test id="s1-t2" name="Open And Log Second Page" line="10">
+<kw name="Click On URL And Log">
+<kw name="Open Browser To URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-13T02:04:45.744161" level="INFO">Opening browser 'Chrome' to base url 'https://learnautomatedtesting.com/courses/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-13T02:04:45.743824" elapsed="2.894000"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-13T02:04:48.639170" elapsed="0.468686"/>
+</kw>
+<arg>${URL}</arg>
+<status status="PASS" start="2024-03-13T02:04:45.743611" elapsed="3.364611"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-13T02:04:49.109458" level="INFO">Clicked on https://learnautomatedtesting.com/courses/</msg>
+<arg>Clicked on ${URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-13T02:04:49.108718" elapsed="0.000832"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-13T02:04:49.109776" elapsed="0.111865"/>
+</kw>
+<arg>https://learnautomatedtesting.com/courses/</arg>
+<status status="PASS" start="2024-03-13T02:04:45.742934" elapsed="3.478801"/>
+</kw>
+<status status="PASS" start="2024-03-13T02:04:45.742594" elapsed="3.479391"/>
+</test>
+<test id="s1-t3" name="Open And Log Third Page" line="11">
+<kw name="Click On URL And Log">
+<kw name="Open Browser To URL">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-13T02:04:49.223394" level="INFO">Opening browser 'Chrome' to base url 'https://learnautomatedtesting.com/contact/'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-13T02:04:49.223200" elapsed="2.624094"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-13T02:04:51.848135" elapsed="0.456044"/>
+</kw>
+<arg>${URL}</arg>
+<status status="PASS" start="2024-03-13T02:04:49.223043" elapsed="3.081281"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-13T02:04:52.304811" level="INFO">Clicked on https://learnautomatedtesting.com/contact/</msg>
+<arg>Clicked on ${URL}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-13T02:04:52.304445" elapsed="0.000399"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-13T02:04:52.304910" elapsed="0.148330"/>
+</kw>
+<arg>https://learnautomatedtesting.com/contact/</arg>
+<status status="PASS" start="2024-03-13T02:04:49.222807" elapsed="3.230512"/>
+</kw>
+<status status="PASS" start="2024-03-13T02:04:49.222303" elapsed="3.231284"/>
+</test>
+<status status="PASS" start="2024-03-13T02:04:37.244683" elapsed="15.209325"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Datadriven">Datadriven</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

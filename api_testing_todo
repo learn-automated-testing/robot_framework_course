@@ -1,0 +1,16 @@
+*** Settings ***
+Library    RequestsLibrary
+
+*** Test Cases ***
+Simple GET Request Test
+    # Create Session
+    Create Session    jsonplaceholder    https://jsonplaceholder.typicode.com
+    
+    # Send GET Request
+    ${response}=    GET On Session    jsonplaceholder    /users/1
+    
+    # Log Status Code
+    Log    Status Code: ${response.status_code}
+    
+    # Log Response Content
+    Log    Response: ${response.content}

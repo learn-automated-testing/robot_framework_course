@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.1 on darwin)" generated="2024-03-12T04:17:10.107474" rpa="false" schemaversion="5">
+<suite id="s1" name="Example" source="/Users/r.vanderhorst/Documents/GitHub/robotframework_course/lesson_1/example.robot">
+<test id="s1-t1" name="Example Test With String" line="5">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-12T04:17:10.132290" level="INFO">${example_string} = example text</msg>
+<var>${example_string}</var>
+<arg>example text</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-12T04:17:10.132195" elapsed="0.000111"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-12T04:17:10.132453" level="INFO">example text</msg>
+<arg>${example_string}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-12T04:17:10.132383" elapsed="0.000087"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${example_string}</arg>
+<arg>example text</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-03-12T04:17:10.132525" elapsed="0.000076"/>
+</kw>
+<doc>A simple test case to demonstrate handling a string.</doc>
+<status status="PASS" start="2024-03-12T04:17:10.131855" elapsed="0.000804"/>
+</test>
+<status status="PASS" start="2024-03-12T04:17:10.112863" elapsed="0.019957"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Example">Example</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

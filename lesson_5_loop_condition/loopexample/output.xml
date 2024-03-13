@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.1 on darwin)" generated="2024-03-13T01:51:10.327328" rpa="false" schemaversion="5">
+<suite id="s1" name="Countenglishblogposts" source="/Users/r.vanderhorst/Documents/GitHub/robotframework_course/lesson_4/loopexample/countenglishblogposts.robot">
+<test id="s1-t1" name="Count Blog Posts Using For Loop" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-13T01:51:10.475377" level="INFO">Opening browser 'Chrome' to base url 'https://www.learnautomatedtesting.com/blog/'.</msg>
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-13T01:51:10.475206" elapsed="4.066166"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-03-13T01:51:14.946572" level="INFO">${elements} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.27")&gt;, &lt;selenium.webdriv...</msg>
+<var>${elements}</var>
+<arg>css=[class^='blog-post-item']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.566215" elapsed="0.380387"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.946875" level="INFO">${count} = 0</msg>
+<var>${count}</var>
+<arg>0</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.946769" elapsed="0.000120"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.947303" level="INFO">${count} = 1</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.947168" elapsed="0.000147"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.27")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.947111" elapsed="0.000226"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.947507" level="INFO">${count} = 2</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.947424" elapsed="0.000093"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.28")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.947380" elapsed="0.000157"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.947695" level="INFO">${count} = 3</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.947613" elapsed="0.000094"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.29")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.947576" elapsed="0.000153"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.947874" level="INFO">${count} = 4</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.947805" elapsed="0.000078"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.30")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.947769" elapsed="0.000131"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.948055" level="INFO">${count} = 5</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.947979" elapsed="0.000086"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.31")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.947937" elapsed="0.000145"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.948212" level="INFO">${count} = 6</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.948148" elapsed="0.000073"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.32")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.948116" elapsed="0.000122"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.948361" level="INFO">${count} = 7</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.948299" elapsed="0.000071"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.33")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.948269" elapsed="0.000117"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.948513" level="INFO">${count} = 8</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.948452" elapsed="0.000070"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.34")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.948423" elapsed="0.000115"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.948658" level="INFO">${count} = 9</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.948597" elapsed="0.000070"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.35")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.948569" elapsed="0.000114"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.948798" level="INFO">${count} = 10</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.948742" elapsed="0.000065"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.36")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.948715" elapsed="0.000108"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.948935" level="INFO">${count} = 11</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.948880" elapsed="0.000064"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.37")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.948853" elapsed="0.000107"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.950256" level="INFO">${count} = 12</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.950117" elapsed="0.000154"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.38")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.950039" elapsed="0.000259"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.950461" level="INFO">${count} = 13</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.950383" elapsed="0.000088"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.39")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.950344" elapsed="0.000146"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.950627" level="INFO">${count} = 14</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.950559" elapsed="0.000078"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.40")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.950525" elapsed="0.000148"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.950799" level="INFO">${count} = 15</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.950738" elapsed="0.000071"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.41")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.950708" elapsed="0.000119"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.950954" level="INFO">${count} = 16</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.950891" elapsed="0.000073"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.42")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.950860" elapsed="0.000121"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.951108" level="INFO">${count} = 17</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.951046" elapsed="0.000071"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.43")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.951016" elapsed="0.000117"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.951258" level="INFO">${count} = 18</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.951195" elapsed="0.000072"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.44")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.951165" elapsed="0.000117"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.951408" level="INFO">${count} = 19</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.951346" elapsed="0.000070"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.45")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.951314" elapsed="0.000118"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.951581" level="INFO">${count} = 20</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.951495" elapsed="0.000106"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.46")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.951464" elapsed="0.000162"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.951795" level="INFO">${count} = 21</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.951716" elapsed="0.000087"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.47")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.951671" elapsed="0.000148"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.952006" level="INFO">${count} = 22</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.951878" elapsed="0.000138"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.48")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.951850" elapsed="0.000183"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.952157" level="INFO">${count} = 23</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.952096" elapsed="0.000070"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.49")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.952065" elapsed="0.000119"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.952307" level="INFO">${count} = 24</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.952247" elapsed="0.000069"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.50")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.952216" elapsed="0.000118"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.952513" level="INFO">${count} = 25</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.952453" elapsed="0.000069"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.51")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.952421" elapsed="0.000118"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.952660" level="INFO">${count} = 26</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.952601" elapsed="0.000069"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.52")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.952570" elapsed="0.000117"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.952806" level="INFO">${count} = 27</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.952746" elapsed="0.000069"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.53")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.952718" elapsed="0.000115"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.952953" level="INFO">${count} = 28</msg>
+<var>${count}</var>
+<arg>${count}+1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.952894" elapsed="0.000069"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="be9a3fc72b6311f8299547edb48265b5", element="f.D57504A221E7685E198B4BE4ADB7F54F.d.40ECFD30FFFDA92FBB85E4B4B3EC4B41.e.54")&gt;</var>
+<status status="PASS" start="2024-03-13T01:51:14.952865" elapsed="0.000114"/>
+</iter>
+<var>${element}</var>
+<value>@{elements}</value>
+<status status="PASS" start="2024-03-13T01:51:14.946956" elapsed="0.006040"/>
+</for>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-03-13T01:51:14.953162" level="INFO">Total number of blog posts found using for loop: 28</msg>
+<arg>Total number of blog posts found using for loop: ${count}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.953095" elapsed="0.000085"/>
+</kw>
+<kw name="Should Be True" owner="BuiltIn">
+<arg>${count} &gt;= 20</arg>
+<arg>msg=Found only ${count} blog posts using for loop, but expected at least 20.</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.953230" elapsed="0.000161"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-13T01:51:14.953454" elapsed="0.114521"/>
+</kw>
+<status status="PASS" start="2024-03-13T01:51:10.474754" elapsed="4.593409"/>
+</test>
+<status status="PASS" start="2024-03-13T01:51:10.328120" elapsed="4.740339"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Countenglishblogposts">Countenglishblogposts</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

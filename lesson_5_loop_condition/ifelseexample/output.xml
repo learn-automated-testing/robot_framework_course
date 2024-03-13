@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.1 on darwin)" generated="2024-03-12T18:05:51.231186" rpa="false" schemaversion="5">
+<suite id="s1" name="Ifelse" source="/Users/r.vanderhorst/Documents/GitHub/robotframework_course/lesson_4/ifelse.robot">
+<test id="s1-t1" name="Aboutus Check And Action" line="21">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-12T18:05:51.422759" level="INFO">Opening browser 'Chrome' to base url 'https://www.learnautomatedtesting.com'.</msg>
+<arg>https://www.learnautomatedtesting.com</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-12T18:05:51.422632" elapsed="3.057137"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-12T18:05:54.480188" elapsed="0.457341"/>
+</kw>
+<kw name="Check Aboutus And Navigate">
+<kw name="Run Keyword And Return Status" owner="BuiltIn">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-12T18:05:54.953718" level="INFO">Element 'css=[href$="/about-us/"]' is displayed.</msg>
+<arg>css=[href$="/about-us/"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-12T18:05:54.938179" elapsed="0.015610"/>
+</kw>
+<msg time="2024-03-12T18:05:54.953882" level="INFO">${aboutUsExist} = True</msg>
+<var>${aboutUsExist}</var>
+<arg>Element Should Be Visible</arg>
+<arg>css=[href$="/about-us/"]</arg>
+<doc>Runs the given keyword with given arguments and returns the status as a Boolean value.</doc>
+<status status="PASS" start="2024-03-12T18:05:54.938084" elapsed="0.015810"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Click About Us">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-12T18:05:54.954379" level="INFO">Clicking element 'css=[href$="/about-us/"]'.</msg>
+<arg>css=[href$="/about-us/"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-12T18:05:54.954285" elapsed="0.282511"/>
+</kw>
+<status status="PASS" start="2024-03-12T18:05:54.954160" elapsed="0.282719"/>
+</kw>
+<arg>${aboutUsExist}</arg>
+<arg>Click About Us</arg>
+<arg>ELSE</arg>
+<arg>Change Language To Dutch And Go To Over Ons</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2024-03-12T18:05:54.954001" elapsed="0.282910"/>
+</kw>
+<status status="PASS" start="2024-03-12T18:05:54.937826" elapsed="0.299120"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-12T18:05:55.237066" elapsed="0.115951"/>
+</kw>
+<status status="PASS" start="2024-03-12T18:05:51.422218" elapsed="3.930968"/>
+</test>
+<status status="PASS" start="2024-03-12T18:05:51.232110" elapsed="4.121324"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Ifelse">Ifelse</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
